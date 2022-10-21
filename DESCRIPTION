@@ -1,14 +1,21 @@
 Package: introspector
-Title: What the Package Does (One Line, Title Case)
+Title: Dataframe Facts for Database Design
 Version: 0.0.0.9000
 Authors@R: 
-    person("Cyrus", "Eosphoros", , "cyrus.eosphoros@gmail.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: MIT + file LICENSE
+    person(given = "Cyrus", family = "Eosphoros", 
+    email = "cyrusae@uw.edu", role = c("aut", "cre"))
+Description: Inspects arbitrary flat files (CSVs, dataframes, tibbles, etc.)
+    and reports relevant information for database design for long-term storage 
+    of the data.
+License: GPL (>= 3)
+Depends:
+    R (>= 3.4)
 Imports: 
-    data.table
+    data.table (>= 1.14.0),
+    glue (>= 1.6.0)
 Suggests: 
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    microbenchmark
 Config/testthat/edition: 3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
